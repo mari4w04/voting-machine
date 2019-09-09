@@ -1,12 +1,10 @@
 <?php
-
-ini_set('display_errors',0)
-
+ini_set('display_errors', 0);
 // validate CPR
-$iCpr = $_POST['cpr'] ?? '';
-if( empty($cpr) ){ fnvSendResponse(0, __LINE__,'CPR field cant be empty');  }
-if( strlen($cpr) != 10 ){ fnvSendResponse(0, __LINE__,'CPR has to be at least 10 numbers'); }
-if( !ctype_digit($cpr)  ){ fnvSendResponse(0, __LINE__,'CPR can only contain digits');  }
+$iCPR = $_POST['lalala'] ?? '';
+if( empty($iCPR) ){ fnvSendResponse(0, __LINE__,'CPR field cant be empty');  }
+if( strlen($iCPR) != 10 ){ fnvSendResponse(0, __LINE__,'CPR has to be at least 10 numbers'); }
+if( !ctype_digit($iCPR)  ){ fnvSendResponse(0, __LINE__,'CPR can only contain digits');  }
 
 // validate password
 $password = $_POST['password'] ?? '';
@@ -19,8 +17,6 @@ $confirmPassword = $_POST['confirmPassword'] ?? '';
 if(empty($confirmPassword)){fnvSendResponse(0, __LINE__,'Confirm password field cant be empty');}
 if($password != $confirmPassword){fnvSendResponse(0, __LINE__,'Passwords doesnt match');}
 
-
-//when all is validated, open the file and check it for corruption
 $sData = file_get_contents('voters.json');
 $jData = json_decode($sData);
 if($jData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
@@ -28,10 +24,9 @@ if($jData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
 $jInnerData = $jData->data; //from the data obj. - point to the obj. inside = the id/phone
 
 $jClient = new stdClass(); // json empty obj.
-$jClient->cpr = $iCpr;
 $jClient->password = password_hash($password, PASSWORD_DEFAULT);
 
-$jInnerData->$iCpr = $jClient; // put the jClient ID/phone inside the jInnerData
+$jInnerData->$iCPR = $jClient; // put the jClient ID/phone inside the jInnerData
 
 
 //convert the obj. back to text and check the file 
@@ -40,8 +35,6 @@ if($sData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
 //put it back in the file
 file_put_contents('voters.json', $sData);
 
-
-// SUCCESS
 fnvSendResponse(1,__LINE__, 'You have succesfully registered');
 
 // **************************************************
@@ -49,10 +42,3 @@ function fnvSendResponse( $iStatus, $iLineNumber, $sMessage ){
     echo '{"status":'.$iStatus.', "code":'.$iLineNumber.',"message":"'.$sMessage.'"}';
     exit;
   }
-
-
-?>
-
-
-
-
