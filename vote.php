@@ -12,8 +12,8 @@ $jData = json_decode($sData);
 $jInnerData = $jData->data;
 //$sUserId = $jInnerData->
 //$jClient = $jInnerData->$sUserId;
-$jVoteInfo = $jInnerData->cpr->vote->candidateName;
-echo json_encode($jVoteInfo);
+$jVoteInfo = $jInnerData->$sUserId->vote->candidateName;
+echo json_encode($jVoteInfo, JSON_PRETTY_PRINT );
 if( $jData == null ){
   echo 'Error, check the database';
 }
@@ -31,32 +31,34 @@ if( $jData == null ){
     Welcome to voting
    <?php
 
-if ($jInnerData->cpr->hasVoted == true){
-  echo '<h1>You have already voted for this election</h1>
+if ($jInnerData->$sUserId->hasVoted == true){
+  echo "<h1>You have already voted for this election</h1>
 
-  <div>You voted for <?= $jVoteInfo ?> </div> ';
+  <div>You voted for $jVoteInfo </div>";
 }else{
-  echo 'you need to vote';
-}
-
-?>
-
-    <div class="candidate-row">
+  echo 'you need to vote
+  <div class="candidate-row">
         <div class="candidate">
         Candidate 1
-        <button class='vote-btn' data-cand='cand1'>Vote for candidate 1</button>
+        <button class="vote-btn" data-cand="cand1">Vote for candidate 1</button>
         </div>
 
         <div class="candidate">
         Candidate 2
-        <button class='vote-btn' data-cand='cand2'>Vote for candidate 2</button>
+        <button class="vote-btn" data-cand="cand2">Vote for candidate 2</button>
         </div>
 
         <div class="candidate">
         Candidate 3
-        <button class='vote-btn' data-cand='cand3'>Vote for candidate 3</button>
+        <button class="vote-btn" data-cand="cand3">Vote for candidate 3</button>
         </div>
     </div>
+  ';
+}
+
+?>
+
+    
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

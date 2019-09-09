@@ -23,7 +23,7 @@ $jVote->candidateName = $sCandidate;
 
 $jInnerData->$sUser->vote = $jVote;
 
-file_put_contents('../voters.json', json_encode($jData));
+file_put_contents('../voters.json', json_encode($jData, JSON_PRETTY_PRINT));
 
 sendResponse( 1, __LINE__ , 'Vote registered'  );
 

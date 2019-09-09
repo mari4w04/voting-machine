@@ -18,7 +18,8 @@ $jData = json_decode($sData);
 if( $jData == null ){ sendResponse(0, __LINE__); }
 $jInnerData = $jData->data;
 
-if( !password_verify( $sPassword, $jInnerData->$sCpr->password )  ){ sendResponse(0, __LINE__); }
+// if( !password_verify( $sPassword, $jInnerData->$sCpr->password )  ){ sendResponse(0, __LINE__); }
+if( $sPassword != $jInnerData->$sCpr->password  ){ sendResponse(0, __LINE__); }
 
 // SUCCESS
 session_start();
@@ -33,13 +34,11 @@ function sendResponse($bStatus, $iLineNumber){
   exit;
 }
 
-?>
-<!-- API LOGOUT START -->
-<?php
-session_start();
+//  API LOGOUT START
+// session_start();
 
-unset($_SESSION['sUserId']);
-unset($_SESSION['sUserName']);
-session_destroy();
+// unset($_SESSION['sUserId']);
+// unset($_SESSION['sUserName']);
+// session_destroy();
 
-header("Location: ./../index.php");
+// header("Location: ./../index.php");
