@@ -13,7 +13,7 @@ $jInnerData = $jData->data;
 //$sUserId = $jInnerData->
 //$jClient = $jInnerData->$sUserId;
 $jVoteInfo = $jInnerData->$sUserId->vote->candidateName;
-echo json_encode($jVoteInfo, JSON_PRETTY_PRINT );
+// echo json_encode($jVoteInfo, JSON_PRETTY_PRINT );
 if( $jData == null ){
   echo 'Error, check the database';
 }
