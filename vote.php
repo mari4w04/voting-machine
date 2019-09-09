@@ -40,7 +40,7 @@ if ($jInnerData->$sUserId->hasVoted == true){
   <div class="candidate-row">
         <div class="candidate">
         Candidate 1
-        <button class="vote-btn" data-cand="cand1">Vote for candidate 1</button>
+        <button class="vote-btn" data-cand="John Doe">Vote for candidate 1</button>
         </div>
 
         <div class="candidate">
