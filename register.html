@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+<body>
+
+    <div class="formContainer">
+        <h1>REGISTER HERE</h1>
+        <form id="frmRegister" action="register.php" method="POST">
+            <input name="firstName" id="firstName" type="text" placeholder="First name*"value="">
+            <input name="lastName" id="lastName" type="text" placeholder="Last name*" value="">
+            <input name="email" id="email" type="email" placeholder="Email*" value="">
+            <input name="cpr" id="cpr" type="text" placeholder="CPR number*" value="">
+            <input name="password" id="password" type="text" placeholder="Password*" value="">
+            <input name="confirmPassword" id="confirmPassword" type="text" placeholder="Type Password again*" value="">
+            <button class="frmButton">REGISTER</button>
+        </form>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="register.js"></script>
+
+</body>
+</html>
