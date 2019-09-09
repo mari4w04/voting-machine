@@ -1,1 +1,28 @@
+<<<<<<< HEAD
 {"data":{"1234567890":{"password":"123123","firstname":"","lastname":"","hasVoted":false,"vote":{"voteId":"5d7642d1f23d4","candidateName":"cand2"}},"1234567891":{"firstname":"","lastname":"","password":"123123","hasVoted":false,"vote":{"voteId":"5d766e8c683d4","candidateName":"cand1"}}}}
+=======
+{
+    "data": {
+        "1234567890": {
+            "password": "123123",
+            "firstname": "",
+            "lastname": "",
+            "hasVoted": false,
+            "vote": {
+                "voteId": "5d7691f603e4b",
+                "candidateName": "cand3"
+            }
+        },
+        "1234567891": {
+            "firstname": "",
+            "lastname": "",
+            "password": "123123",
+            "hasVoted": false,
+            "vote": {
+                "voteId": "5d7642f5d1865",
+                "candidateName": "cand3"
+            }
+        }
+    }
+}
+>>>>>>> 5d412b662c86488a06b16c5468b2403ff135593e
