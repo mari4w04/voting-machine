@@ -1,0 +1,16 @@
+{
+    "data": {
+        "cpr":{
+            "firstname": "",
+            "lastname":"",
+            "password":"",
+            "hasVoted": false,
+            "vote":{
+                "voteId":"2",
+                "candidateName":"Jean claude"
+            }
+           
+        }
+    }
+ }
+ 
