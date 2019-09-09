@@ -43,28 +43,3 @@ unset($_SESSION['sUserName']);
 session_destroy();
 
 header("Location: ./../index.php");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
