@@ -1,0 +1,21 @@
+{
+    "data": {
+        "1234567890": {
+            "password": "$2y$10$ORrfD48yxTDxYhM1LhiirerxHmLvCY6kqG4wEQoaEaa3nxZA8bNKy"
+        },
+        "1234567899": {
+            "password": "$2y$10$p42unUp0s8hfofwBReiAk.rkNjkEtBP5iQMKwC1c9Aw804NwrUAEG"
+        },
+        "1111111111": {
+            "password": "$2y$10$JsJqRfEeo4hVIJC.XAJuYen6IXSPDLyh0P\/z1QnfXdUcERQXbciWi"
+        },
+        "2222222222": {
+            "password": "$2y$10$bdJ3EPeu9xqidf7sMLxOLeM102T7\/N81xhtkMdC1sYWZHgkQ0TOoe",
+            "hasVoted": false
+        },
+        "3333333333": {
+            "password": "$2y$10$Y1qAlVUBEzr1Amdlh9X9fe6qslVdmseOQmqZLp\/eH0KajBEucv0aK",
+            "hasVoted": false
+        }
+    }
+}
