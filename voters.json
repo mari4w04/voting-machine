@@ -1,16 +1,26 @@
 {
     "data": {
-        "cpr":{
+
+        "1234567890": {
+            "password": "123123",
             "firstname": "",
-            "lastname":"",
-            "password":"",
+            "lastname": "",
             "hasVoted": false,
-            "vote":{
-                "voteId":"2",
-                "candidateName":"Jean claude"
+            "vote": {
+                "voteId": "5d7642d1f23d4",
+                "candidateName": "cand2"
             }
-           
+        },
+        "1234567891": {
+            "firstname": "",
+            "lastname": "",
+            "password": "123123",
+            "hasVoted": false,
+            "vote": {
+                "voteId": "5d7642f5d1865",
+                "candidateName": "cand3"
+            }
         }
     }
- }
- 
+}
+
