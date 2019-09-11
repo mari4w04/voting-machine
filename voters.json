@@ -4,10 +4,10 @@
             "firstName": "test",
             "lastName": "test",
             "password": "123123",
-            "hasVoted": false,
+            "hasVoted": true,
             "vote": {
-                "voteId": "5d78e178e61c3",
-                "candidateName": "cand2"
+                "voteId": "5d78ef2d0eb59",
+                "candidateName": "Joe Biden"
             }
         },
         "1234567891": {
