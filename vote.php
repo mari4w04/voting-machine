@@ -82,7 +82,6 @@ if ($jInnerData->$sUserId->hasVoted == true){
 
       <div class="candidate">
         <img src="images/kirsten-gillibrand.jpg">
-        Kirsten Gillibrand
         <div class="name-container">
           <div class="name-tag">Kirsten Gillibrand</div>
         </div>
