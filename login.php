@@ -7,12 +7,13 @@
     <title>Welcome</title>
 </head>
 <body>
-    <!-- index has login and signup option -->
-    <h1>LOGIN</h1>
-    <form id="frmLogin">
-        <input type="text" name="txtLoginCpr" placeholder="phone"> <!-- CPR + password -->
-        <input type="password" name="txtLoginPassword" placeholder="password">
-        <button>login</button>
+
+    <h1>Login</h1>
+    
+    <form id="frmLogin" action='apis/api-login' method="POST">
+        <input name="txtLoginCPR" type="text" placeholder="Your CPR" >
+        <input name="txtLoginPassword" type="password" placeholder="password">
+        <button>Login</button>
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -18,8 +18,8 @@ $jData = json_decode($sData);
 if( $jData == null ){ sendResponse(0, __LINE__); }
 $jInnerData = $jData->data;
 
-// if( !password_verify( $sPassword, $jInnerData->$sCpr->password )  ){ sendResponse(0, __LINE__); }
-if( $sPassword != $jInnerData->$sCpr->password  ){ sendResponse(0, __LINE__); }
+
+if( !password_verify( $sPassword,  $jInnerData->$sCPR->password)  ){ sendResponse(0, __LINE__); }
 
 // SUCCESS
 session_start();

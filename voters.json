@@ -1,9 +1,9 @@
 {
     "data": {
         "1234567890": {
+            "firstName": "test",
+            "lastName": "test",
             "password": "123123",
-            "firstname": "",
-            "lastname": "",
             "hasVoted": true,
             "vote": {
                 "voteId": "5d774fd6e7387",
@@ -11,12 +11,22 @@
             }
         },
         "1234567891": {
-            "firstname": "",
-            "lastname": "",
+            "firstName": "test",
+            "lastName": "test",
             "password": "123123",
-            "hasVoted": false,
+            "hasVoted": true,
             "vote": {
                 "voteId": "5d7642f5d1865",
+                "candidateName": "cand3"
+            }
+        },
+        "1234567888": {
+            "firstName": "Sarah",
+            "lastName": "Esper",
+            "password": "$2y$10$h\/n2hB6xeUhQJyBB\/GdAm.9wKbpqjxWDK7m2Dg3idu2S\/MU5ciSwy",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d77b29d8c5a9",
                 "candidateName": "cand3"
             }
         }
