@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F7F7F7;
+    background-image: none;
+}
+.content{
+    margin: 0 10%;
+}
+.admin-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin: 0 10%;
+    text-align: center;
+}
+.transfer-admin{
+    flex: 1;
+}
+.page-name{
+    grid-area: heading;
+    
+}
+.leftCol{
+    grid-area: leftCol;   
+}
+.rightCol{
+    grid-area: rightCol;   
+}
+.bottomRow{
+    grid-area: bottomRow; 
+}
+nav{
+    border-bottom: 1px solid #EAEAEA;
+    grid-area: nav;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+input[type=text], input[type=password]{
+    background-color: white;
+    border: 1px solid #DBDBDB;
+}
+
+form{
+    width: 100%;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+#frmTransfer .row div{
+    width: 100%;
+}
+.row > div{
+    margin-right: 20px;
+}
+#txtTransferMessage{
+    height: 76%;
+}
+.your-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.your-data h2{
+    margin-bottom: 35px;
+}
+.transfer-money {
+    padding: 40px;
+}
+.recent-operations {
+    padding: 40px;
+}
+.about-data{
+    font-size: 26px;
+    font-weight: 700;
+    color: #1B0F56;
+}
+.divider{
+    height: 210px;
+    width: 1px;
+    background-color: #DDDDDD;
+}
+.your-email{
+    font-size: 20px;
+}
+.message-text{
+    font-size: 26px;
+    font-weight: 700;
+    color: #1B0F56;
+}
+.amount{
+    color: #33CC86;
+}
+.name-text{
+    font-size: 12px;
+    color: #686868;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.transaction{
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.logo{
+    height: 20px;
+    width: auto;
+    margin-right: 20px;
+}
+.amount-box{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0 !important;
+}
+.currency{
+    margin-left: 10px;
+}
+.card-padding{
+    padding: 40px;
+}
+.admin-content .client-name{
+    font-size: 23px;
+    font-weight: 900;
+}
+.admin-content .client-name-box{
+    display: flex;
+    align-items: center;
+}
+.admin-content .phone-number{
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: rgba(0,0,0,0.7   );
+}
+.admin-content .email{
+    font-weight: 700;
+    margin-top: 10px;
+}
+.admin-content .row{
+    align-items: center;
+    justify-content: center;
+}
+.admin-content .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    align-items: center;
+}
+.green-circle{
+    background-color: #33CC86;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.red-circle{
+    background-color: #FF4B55;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.wide-btn{
+    width: 250px;
+}
+.request-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

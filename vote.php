@@ -28,10 +28,18 @@ if( $jData == null ){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/white-theme.css">
 </head>
 <body>
-  <a href="apis/logout.php">Log out</a>
-  <h1>Hi <?= $jInnerData->$sUserId->firstName ?></h1>
+  <nav>
+      <a href="login"><img class="logo" src="images/logo.svg"></a>
+      
+      <a href="apis/logout.php">Log out</a>
+      <h6>Hi <?= $jInnerData->$sUserId->firstName ?></h6>
+  </nav>
+
+<div class="content">
+  
    <?php
 
 if ($jInnerData->$sUserId->hasVoted == true){
@@ -39,35 +47,38 @@ if ($jInnerData->$sUserId->hasVoted == true){
   $jVoteInfo = $jInnerData->$sUserId->vote->candidateName;
 
 
-    <div class="candidate-row">
+    
 
-  echo "<h1>Thank you for your vote!</h1>
+  echo "<div class='candidate-row'><h1>Thank you for your vote!</h1>
 
   <div>You voted for '.$jVoteInfo.' </div>";
 }else{
-      echo '<p>Welcome to voting, you need to vote</p>'
-        
-  <div class="candidate-row">
+  echo '
+  <div class="card">
+  <h1>Welcome to voting, you need to vote</h1>
+    <div class="candidate-row">
+      <div class="candidate">
+      <img src="images/cory-booker.jpg">
+      Candidate 1
+      <button class="vote-btn" data-cand="John Doe">Vote for candidate 1</button>
+      </div>
 
-        <div class="candidate">
-        Candidate 1
-        <button class="vote-btn" data-cand="John Doe">Vote for candidate 1</button>
-        </div>
+      <div class="candidate">
+      Candidate 2
+      <button class="vote-btn" data-cand="cand2">Vote for candidate 2</button>
+      </div>
 
-        <div class="candidate">
-        Candidate 2
-        <button class="vote-btn" data-cand="cand2">Vote for candidate 2</button>
-        </div>
-
-        <div class="candidate">
-        Candidate 3
-        <button class="vote-btn" data-cand="cand3">Vote for candidate 3</button>
-        </div>
+      <div class="candidate">
+      Candidate 3
+      <button class="vote-btn" data-cand="cand3">Vote for candidate 3</button>
+      </div>
     </div>
-  ';
+  </div>';
+      
 }
 
 ?>
+</div>
 
     
     

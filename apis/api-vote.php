@@ -17,7 +17,7 @@ $jInnerData = $jData->data;
 
 $sUser = $_SESSION['sUserId'] ;
 
-if ($jInnerData->$sUser->hasVoted = true){
+if ($jInnerData->$sUser->hasVoted == true){
   header("Location: vote.php");
   echo 'you already voted';
   exit();

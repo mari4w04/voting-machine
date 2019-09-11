@@ -1,10 +1,125 @@
-.candidate{
-    background-color: lightslategray;
-    display: inline-block;
-    height: 100px;
-    width: 100px;
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700,900');
+*{
+    font-family: 'Lato', sans-serif;
+}
+.login-page{
+    background-color: #0055a5;
+}
+body{
+    /* background-image: url('../images/signup-transparent-bg.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: white;
+    margin: 0 0 20px 0;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10vw;
+}
+nav a{
+    text-decoration: none;
+    color: #0055a5;
+    font-weight: 700;
+    margin-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0055a5;
+}
+h2{
+    font-size: 23px;
+    font-weight: 900;
+}
+h3{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 900;
+    margin-left: 20px;
+}
+h6{
+    margin-block-start: 10px;
+    margin-block-end: 5px;
+    font-size: 12px;
+    color: #CECECE;
+    text-transform: uppercase;
+}
+.form-container{
+    width: 35vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+form{
+    width: 80%;
+    margin: 0 auto;
+}
+input, textarea, select, button {
+    width : 150px;
+    margin: 0;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=password], button{
+    display: block;
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+    border-width: 0;
+    border-style: none;
+    border-radius: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 0 0 0 10px;
+}
+button{
+    background-color: #0055a5;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+    width: 190px;
+    padding: 0;
+    border-radius: 50px;
+    margin: 20px auto 20px auto;
     cursor: pointer;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.line-separator{
+    background-color: #CECECE;
+    height: 25px;
+    width: 1px;
+    margin-left: 10px;
+}
+.candidate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .candidate-row{
     display: flex;
+}
+.candidate img{
+    height: auto;
+    width: 150px;
 }
