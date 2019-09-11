@@ -53,8 +53,10 @@ if ($jInnerData->$sUserId->hasVoted == true){
 
     <div class='candidate'>
       <img src='images/$firstname-$lastname.jpg'>
-      <div class='vote-results'>You voted for $jVoteInfo </div>
+      <div>You voted for $jVoteInfo </div>
+      <div><a href='vote-dashboard.php'><button>See vote statistics</button></a><div>
     </div>
+
   </div>
   ";
 } else {
@@ -80,6 +82,7 @@ if ($jInnerData->$sUserId->hasVoted == true){
 
       <div class="candidate">
         <img src="images/kirsten-gillibrand.jpg">
+        Kirsten Gillibrand
         <div class="name-container">
           <div class="name-tag">Kirsten Gillibrand</div>
         </div>

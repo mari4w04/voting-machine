@@ -1,5 +1,12 @@
 {
     "data": {
+        "0000000001": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": true
+    }
+
         "1234567888": {
             "firstName": "Sarah",
             "lastName": "Esper",
@@ -10,6 +17,68 @@
                 "candidateName": "cand3"
             }
         },
+
+        "0000000002": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7642f5d1865",
+                "candidateName": "Cory Booker"
+            }
+        },
+        "0000000003": {
+            "firstName": "Sarah",
+            "lastName": "Esper",
+            "password": "123123",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d77b29d8c5a9",
+                "candidateName": "Kirsten Gillibrand"
+            }
+        },
+        "0000000004": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d78ef2d0eb59",
+                "candidateName": "Michael Bennet"
+            }
+        },
+        "0000000005": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d78ef2d0eb59",
+                "candidateName": "Tulsi Gabbard"
+            }
+        },
+        "0000000006": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d78ef2d0eb59",
+                "candidateName": "Joe Biden"
+            }
+        },
+        "0000000007": {
+            "firstName": "test",
+            "lastName": "test",
+            "password": "123123",
+            "hasVoted": false,
+            "vote": {
+                "voteId": "5d78ef2d0eb59",
+                "candidateName": "Joe Biden"
+            }
+        },
+
         "1234567893": {
             "firstName": "Maria",
             "lastName": "Belautdinova",
