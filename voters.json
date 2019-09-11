@@ -1,25 +1,5 @@
 {
     "data": {
-        "1234567890": {
-            "firstName": "test",
-            "lastName": "test",
-            "password": "123123",
-            "hasVoted": true,
-            "vote": {
-                "voteId": "5d78ef2d0eb59",
-                "candidateName": "Joe Biden"
-            }
-        },
-        "1234567891": {
-            "firstName": "test",
-            "lastName": "test",
-            "password": "123123",
-            "hasVoted": true,
-            "vote": {
-                "voteId": "5d7642f5d1865",
-                "candidateName": "cand3"
-            }
-        },
         "1234567888": {
             "firstName": "Sarah",
             "lastName": "Esper",
@@ -29,6 +9,56 @@
                 "voteId": "5d77b29d8c5a9",
                 "candidateName": "cand3"
             }
+        },
+        "1234567893": {
+            "firstName": "Maria",
+            "lastName": "Belautdinova",
+            "password": "$2y$10$jOtG4WyhAcUnKRoqKbj17ux1d18njV.iVFtP0pIWsViBfDhA8Y9Vu",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7903b51acc5",
+                "candidateName": "Michael Bennet"
+            }
+        },
+        "1234567898": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "password": "$2y$10$V0yrARBGIBOLEQFEwU.VP.Nfg5sojVDlSO0gktU2zoIF80w1sy.0C",
+            "hasVoted": false
+        },
+        "1234567899": {
+            "firstName": "Jane",
+            "lastName": "Doe",
+            "password": "$2y$10$gA0r2mfIH0mKOBQhSE.akOQmzBnjok8aFcEdbb98XoffWdH3Rd2F2",
+            "hasVoted": false
+        },
+        "1234567894": {
+            "firstName": "Johny",
+            "lastName": "Doe",
+            "password": "$2y$10$FDqeopJG7NhsPvP2sddeROc0zQKVVa\/avRg\/PAh5REqJn.ehqPnqC",
+            "hasVoted": false
+        },
+        "0987654321": {
+            "firstName": "QQ",
+            "lastName": "QQQ",
+            "password": "$2y$10$zUcGN9I8dTUwLgEBgJmw3.QQG.yonylWAoij2XBmBj0Bx9yLzCjXi",
+            "hasVoted": false
+        },
+        "9987654321": {
+            "firstName": "www",
+            "lastName": "www",
+            "password": "$2y$10$kDHREZs1jL1b4cOewXEBY.3Ose93s813qONAUWJ2t\/4jRCQv9YM6K",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d79057cc3950",
+                "candidateName": "Tulsi Gabbard"
+            }
+        },
+        "1234567890": {
+            "firstName": "Stephanie",
+            "lastName": "Smith",
+            "password": "$2y$10$iC174gRbLUeZiWvrnl67.uYi4FpYgFzN80jDkAGhQkf1uBE5hQGdq",
+            "hasVoted": false
         }
     }
 }

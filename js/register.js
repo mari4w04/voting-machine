@@ -11,9 +11,18 @@ $('#frmRegister').submit(function(){
     done(function(jData){
         console.log(jData)
         if(jData.status == 1){
-            swal("Thank you!", "Your account has been created!", "success");
+
+            swal({
+                title: "Thank you!",
+                text: "Your account has been created!",
+                type: "success",
+                button: "Login to vote",
+            }).then(function() {
+                window.location = "login";
+            });
+            
             console.log("you have signed up")
-            return
+            
         }
 
         if(jData.status == 0){
