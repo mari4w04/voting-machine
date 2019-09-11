@@ -15,17 +15,7 @@ if($jData ==null){
 }
 $jInnerData = $jData->data;
 
-// password_verify($sPassword, $jInnerData->$sCPR->password)
-if($sPassword != $jInnerData->$sCPR->password){
-    sendResponse(0,__LINE__);
-    
-}
-
-//Check if user is active
-// if($jInnerData->$sPhone->active != 1) ){
-//     sendResponse(0,__LINE__);
-    
-// }
+if( !password_verify( $sPassword,  $jInnerData->$sCPR->password)  ){ sendResponse(0, __LINE__); }
 
 //SUCCESS
 session_start();

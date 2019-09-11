@@ -4,7 +4,7 @@
         header('Location: login.php');
     }
 
-    $sUserId = $_SESSION['sUserId'];
+$sUserId = $_SESSION['sUserId'];
 
 $sData = file_get_contents('voters.json');
 $jData = json_decode($sData);
@@ -12,8 +12,8 @@ $jData = json_decode($sData);
 $jInnerData = $jData->data;
 //$sUserId = $jInnerData->
 //$jClient = $jInnerData->$sUserId;
-$jVoteInfo = $jInnerData->cpr->vote->candidateName;
-echo json_encode($jVoteInfo);
+//$jVoteInfo = $jInnerData->cpr->vote->candidateName;
+//echo json_encode($jVoteInfo);
 if( $jData == null ){
   echo 'Error, check the database';
 }
@@ -28,15 +28,18 @@ if( $jData == null ){
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    Welcome to voting
+  <a href="apis/logout.php">Log out</a>
+  <h1>Hi <?= $jInnerData->$sUserId->firstName ?></h1>
    <?php
 
-if ($jInnerData->cpr->hasVoted == true){
-  echo '<h1>You have already voted for this election</h1>
+if ($jInnerData->$sUserId->hasVoted == true){
+  $jVoteInfo = $jInnerData->$sUserId->vote->candidateName;
+  echo '<h1>Thank you for your vote!</h1>
 
-  <div>You voted for <?= $jVoteInfo ?> </div> ';
+  <div>You voted for '.$jVoteInfo.' </div> ';
 }else{
-  echo 'you need to vote';
+  
+  echo 'Welcome to voting, you need to vote';
 }
 
 ?>

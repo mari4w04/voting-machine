@@ -9,7 +9,7 @@
     <h1>Login</h1>
     
     <form id="frmLogin" action='apis/api-login' method="POST">
-        <input name="txtLoginCPR" type="text" placeholder="phone" >
+        <input name="txtLoginCPR" type="text" placeholder="Your CPR" >
         <input name="txtLoginPassword" type="password" placeholder="password">
         <button>Login</button>
     </form>

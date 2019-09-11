@@ -2,7 +2,7 @@ $('#frmRegister').submit(function(){
     console.log('signing up...')
     $.ajax({
         method: "POST",
-        url: 'register.php',
+        url: '../apis/register.php',
         //key: whatever is in the form - convert the form to code that php will understand
         data: $('#frmRegister').serialize(),
         //return what? as json
@@ -11,6 +11,7 @@ $('#frmRegister').submit(function(){
     done(function(jData){
         console.log(jData)
         if(jData.status == 1){
+            swal("Thank you!", "Your account has been created!", "success");
             console.log("you have signed up")
             return
         }
