@@ -8,11 +8,6 @@ $('#frmLogin').submit( function(){
     }).done(function(jData){
         console.log(jData)
         if(jData.status == 1){
-            swal({
-                title: "Congrats",
-                text: "You have logged in",
-                icon: "success",
-            });
             location.href = 'vote'
         }else{
             swal({

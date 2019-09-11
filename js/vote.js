@@ -21,7 +21,7 @@ $('.vote-btn').click(function(){
         // location.href = 'vote-dashboard'
 
         swal({
-            title: "Congrats!",
+            title: "Thank you!",
             text: "You have voted for " +candidateName,
             type: "success",
             button: "See results",

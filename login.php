@@ -9,7 +9,6 @@
 </head>
 <body class="login-page">
     <nav>
-        <a href="login"><img class="logo" src="images/logo.svg"></a>
         <a href="login">Login</a>
         <div class="line-separator"></div>
         <a href="signup">Signup</a>
