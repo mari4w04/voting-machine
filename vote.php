@@ -43,34 +43,54 @@ if( $jData == null ){
    <?php
 
 if ($jInnerData->$sUserId->hasVoted == true){
-
   $jVoteInfo = $jInnerData->$sUserId->vote->candidateName;
+  $name = explode(" ", $jVoteInfo);
+  $firstname = strtolower($name[0]);
+  $lastname = strtolower($name[1]);
 
+  echo "
+  <div class='card'>
+    <h1>Thank you for your vote!</h1>
 
-    
-
-  echo "<div class='candidate-row'><h1>Thank you for your vote!</h1>
-
-  <div>You voted for '.$jVoteInfo.' </div>";
-}else{
+    <div class='candidate'>
+      <img src='images/$firstname-$lastname.jpg'>
+      <div>You voted for $jVoteInfo </div>
+    </div>
+  </div>
+  ";
+} else {
   echo '
   <div class="card">
   <h1>Welcome to voting, you need to vote</h1>
     <div class="candidate-row">
       <div class="candidate">
-      <img src="images/cory-booker.jpg">
-      Candidate 1
-      <button class="vote-btn" data-cand="John Doe">Vote for candidate 1</button>
+        <img src="images/cory-booker.jpg">
+        Cory Booker
+        <button class="vote-btn" data-cand="Cory Booker">Vote</button>
       </div>
 
       <div class="candidate">
-      Candidate 2
-      <button class="vote-btn" data-cand="cand2">Vote for candidate 2</button>
+        <img src="images/joe-biden.jpg">
+        Joe Biden
+        <button class="vote-btn" data-cand="Joe Biden">Vote</button>
       </div>
 
       <div class="candidate">
-      Candidate 3
-      <button class="vote-btn" data-cand="cand3">Vote for candidate 3</button>
+        <img src="images/kirsten-gillibrand.jpg">
+        Kristen Gillibrand
+        <button class="vote-btn" data-cand="Kristen Gillibrand">Vote</button>
+      </div>
+
+      <div class="candidate">
+        <img src="images/michael-bennet.jpg">
+        Michael Bennet
+        <button class="vote-btn" data-cand="Michael Bennet">Vote</button>
+      </div>
+
+      <div class="candidate">
+        <img src="images/tulsi-gabbard.jpg">
+        Tulsi Gabbard
+        <button class="vote-btn" data-cand="Tulsi Gabbard">Vote</button>
       </div>
     </div>
   </div>';
