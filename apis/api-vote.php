@@ -27,7 +27,10 @@ $jInnerData->$sUser->hasVoted = true;
 $jVote = new stdClass(); //json object
 $jVote->voteId = uniqid();
 $jVote->candidateName = $sCandidate;
+
 $jInnerData->$sUser->vote = $jVote;
+$jInnerData->$sUser->hasVoted = true;
+
 
 file_put_contents('../voters.json', json_encode($jData, JSON_PRETTY_PRINT));
 

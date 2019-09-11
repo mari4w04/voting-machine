@@ -1,0 +1,27 @@
+<?php
+
+$sInjectCss = '<link rel="stylesheet" href="css/index.css">';
+  
+
+require_once __DIR__.'/top.php'; 
+?>
+
+<div id="login" class="page">
+
+<form id="frmLogin" action="apis/api-login.php" method="POST"> 
+    
+    <input id="txtLoginEmail" name="txtLoginEmail" type="text" data-type="email" placeholder="Email" size="20" value="">
+    <input id="txtLoginPassword" name="txtLoginPassword" type="password" data-type="password" placeholder="Password" minlength="3" maxlength="50" value="">
+
+<button class="btn pullCenter">Login</button>
+<a href="#">Forgot Password?</a>
+<div>
+<a href="signup.php">Don't have an account with us yet?</a>
+</div>
+</form>
+
+</div>
+
+
+<?php
+require_once __DIR__.'/bottom.php'; 
