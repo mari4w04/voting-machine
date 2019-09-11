@@ -30,7 +30,7 @@ if( strlen($password) > 50 ){ fnvSendResponse(0, __LINE__,'Password cant be long
 $confirmPassword = $_POST['confirmPassword'] ?? '';
 if(empty($confirmPassword)){fnvSendResponse(0, __LINE__,'Confirm password field cant be empty');}
 if($password != $confirmPassword){fnvSendResponse(0, __LINE__,'Passwords doesnt match');}
-$sData = file_get_contents('voters.json');
+$sData = file_get_contents('../voters.json');
 $jData = json_decode($sData);
 
 if($jData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
@@ -47,9 +47,9 @@ $sData = json_encode($jData, JSON_PRETTY_PRINT);
 
 if($sData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
 //put it back in the file
-file_put_contents('voters.json', $sData);
+file_put_contents('../voters.json', $sData);
 fnvSendResponse(1,__LINE__, 'You have succesfully registered');
-header('Location:../login.php');
+header("Location:../login.php");
 
 // **************************************************
 function fnvSendResponse( $iStatus, $iLineNumber, $sMessage ){

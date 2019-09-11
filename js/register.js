@@ -2,7 +2,7 @@ $('#frmRegister').submit(function(){
     console.log('signing up...')
     $.ajax({
         method: "POST",
-        url: '../apis/register.php',
+        url: 'voting-machine/../apis/register.php',
         //key: whatever is in the form - convert the form to code that php will understand
         data: $('#frmRegister').serialize(),
         //return what? as json
