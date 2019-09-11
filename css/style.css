@@ -22,6 +22,10 @@ nav{
     justify-content: flex-start;
     padding-left: 10vw;
 }
+nav h6{
+    margin-block-start: 6px;
+    margin-block-end: 5px;
+}
 nav a{
     text-decoration: none;
     color: #0055a5;
@@ -104,6 +108,7 @@ button{
     margin: 10px;
     display: flex;
     flex-direction: column;
+    padding: 60px;
 }
 .line-separator{
     background-color: #CECECE;
@@ -122,11 +127,54 @@ button{
 }
 .candidate img{
     height: auto;
-    width: 150px;
+    width: 170px;
 }
 .vote-btn{
     width: 80px;
     text-transform: uppercase;
     font-size: 15px;
     height: 40px;
+}
+.name-tag{
+    background-color: #e33529;
+    color: white;
+    padding: 10px;
+    width: 10vw;
+    margin-top: 5px;
+    position: relative;
+}
+.name-tag:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 13%;
+    height: 100%;
+    top: 0;
+    right: -16px;
+    z-index: 1;
+    background: #e33529;
+    transform-origin: bottom left;
+    -ms-transform: skew(15deg, 0deg);
+    -webkit-transform: skew(15deg, 0deg);
+    transform: skew(15deg, 0deg);
+}
+.name-container{
+    width: 100%;
+}
+.vote-results{
+    margin-top: 10px;   
+}
+
+@media screen and (max-width: 1240px){
+    .candidate-row {
+        flex-direction: column;
+    }
+    .name-container {
+        display: flex;
+        justify-content: center;
+        margin-left: -25px;
+    }
+    .name-tag {
+        width: 144px;
+    }
 }
