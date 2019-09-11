@@ -1,20 +1,20 @@
 {
     "data": {
         "1234567890": {
+            "firstName": "test",
+            "lastName": "test",
             "password": "123123",
-            "firstName": "",
-            "lastName": "",
-            "hasVoted": false,
+            "hasVoted": true,
             "vote": {
                 "voteId": "5d7642d1f23d4",
                 "candidateName": "cand2"
             }
         },
         "1234567891": {
-            "firstName": "",
-            "lastName": "",
+            "firstName": "test",
+            "lastName": "test",
             "password": "123123",
-            "hasVoted": false,
+            "hasVoted": true,
             "vote": {
                 "voteId": "5d7642f5d1865",
                 "candidateName": "cand3"
