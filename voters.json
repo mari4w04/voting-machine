@@ -1,23 +1,5 @@
 {
     "data": {
-        "0000000001": {
-            "firstName": "test",
-            "lastName": "test",
-            "password": "123123",
-            "hasVoted": true
-    }
-
-        "1234567888": {
-            "firstName": "Sarah",
-            "lastName": "Esper",
-            "password": "$2y$10$h\/n2hB6xeUhQJyBB\/GdAm.9wKbpqjxWDK7m2Dg3idu2S\/MU5ciSwy",
-            "hasVoted": true,
-            "vote": {
-                "voteId": "5d77b29d8c5a9",
-                "candidateName": "cand3"
-            }
-        },
-
         "0000000002": {
             "firstName": "test",
             "lastName": "test",
@@ -72,13 +54,8 @@
             "firstName": "test",
             "lastName": "test",
             "password": "123123",
-            "hasVoted": false,
-            "vote": {
-                "voteId": "5d78ef2d0eb59",
-                "candidateName": "Joe Biden"
-            }
+            "hasVoted": false
         },
-
         "1234567893": {
             "firstName": "Maria",
             "lastName": "Belautdinova",
@@ -93,7 +70,11 @@
             "firstName": "Jane",
             "lastName": "Doe",
             "password": "$2y$10$V0yrARBGIBOLEQFEwU.VP.Nfg5sojVDlSO0gktU2zoIF80w1sy.0C",
-            "hasVoted": false
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d791d33649e8",
+                "candidateName": "Tulsi Gabbard"
+            }
         },
         "1234567899": {
             "firstName": "Jane",
@@ -127,7 +108,11 @@
             "firstName": "Stephanie",
             "lastName": "Smith",
             "password": "$2y$10$iC174gRbLUeZiWvrnl67.uYi4FpYgFzN80jDkAGhQkf1uBE5hQGdq",
-            "hasVoted": false
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d79184a4ddf9",
+                "candidateName": "Tulsi Gabbard"
+            }
         }
     }
 }

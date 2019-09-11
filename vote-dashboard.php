@@ -28,16 +28,18 @@ $jCandidatesStatistics = new stdClass();
 
 
 $aCandidates = array();
+$aCandidates2 = array();
 
 foreach($jInnerData as $jVoter){
-    $sCandidate = $jVoter->vote->candidateName;
+    if($jVoter->hasVoted){
+        $sCandidate = $jVoter->vote->candidateName;
+    }
     if( in_array($sCandidate, $aCandidates) ) { // if in array, skip iteration
         continue;
     }
     $jCandidatesStatistics->$sCandidate = new stdClass();
     $jCandidatesStatistics->$sCandidate->votes = 0;
     array_push($aCandidates, $sCandidate);
-    // echo($jCandidatesStatistics->$sCandidate->votes);
 }
 
 foreach($aCandidates as $sCandidate){
