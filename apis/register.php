@@ -35,12 +35,25 @@ $jData = json_decode($sData);
 
 if($jData == null){fnvSendResponse(0, __LINE__,'json data corrupt'); }
 $jInnerData = $jData->data; //from the data obj. - point to the obj. inside = the id/phone
+
+// foreach($jInnerData as $jUser){
+//   if($jUser->$iCPR == $iCPR){
+//     fnvSendResponse(0,__LINE__, 'CPR has already been registered');
+//   }
+// }
+
+if (strpos($jInnerData, $iCPR) !== FALSE) {
+  fnvSendResponse(0,__LINE__, 'CPR has already been registered');
+}
+
+
 $jClient = new stdClass(); // json empty obj.
 $jClient->firstName = $sFirstName;
 $jClient->lastName = $sLastName;
 $jClient->password = password_hash($password, PASSWORD_DEFAULT);
 $jClient->hasVoted = false;
 $jInnerData->$iCPR = $jClient; // put the jClient ID/phone inside the jInnerData
+
 
 //convert the obj. back to text and check the file 
 $sData = json_encode($jData, JSON_PRETTY_PRINT);

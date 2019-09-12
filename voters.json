@@ -77,22 +77,26 @@
             }
         },
         "1234567899": {
-            "firstName": "Jane",
-            "lastName": "Doe",
-            "password": "$2y$10$gA0r2mfIH0mKOBQhSE.akOQmzBnjok8aFcEdbb98XoffWdH3Rd2F2",
+            "firstName": "Ioana",
+            "lastName": "Banan",
+            "password": "$2y$10$4qlgE4PcFTevyFDbQSoq5ujKllzonvRzaTT\/uhCycSW.SC1W9uOS6",
             "hasVoted": false
         },
         "1234567894": {
-            "firstName": "Johny",
-            "lastName": "Doe",
-            "password": "$2y$10$FDqeopJG7NhsPvP2sddeROc0zQKVVa\/avRg\/PAh5REqJn.ehqPnqC",
+            "firstName": "Marija",
+            "lastName": "ajdoas",
+            "password": "$2y$10$s9QywGdq2MItoa5C\/zUb8OTeNCBL9VC54yxmKin9CV6Zqk.u.ffgi",
             "hasVoted": false
         },
         "0987654321": {
             "firstName": "QQ",
             "lastName": "QQQ",
             "password": "$2y$10$zUcGN9I8dTUwLgEBgJmw3.QQG.yonylWAoij2XBmBj0Bx9yLzCjXi",
-            "hasVoted": false
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7a4345230a7",
+                "candidateName": "Tulsi Gabbard"
+            }
         },
         "9987654321": {
             "firstName": "www",
@@ -118,7 +122,21 @@
             "firstName": "qqqqq",
             "lastName": "qqqqq",
             "password": "$2y$10$jFLp4LAUipauyflH4Xyww.\/oljlkeqa2N9jaMi1slfwPV6hyzb4v2",
-            "hasVoted": false
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7a43e1d612b",
+                "candidateName": "Kirsten Gillibrand"
+            }
+        },
+        "1234512345": {
+            "firstName": "Ioana",
+            "lastName": "Banana",
+            "password": "$2y$10$8MLq79hXXW4qFXkS3UOIFOOk\/ByLEf8ZRZTFL3knUW\/TvHqRX54vO",
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7a4405dbca4",
+                "candidateName": "Cory Booker"
+            }
         }
     }
 }
