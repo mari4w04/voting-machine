@@ -1,5 +1,6 @@
 <?php
-ini_set('display_errors', 0);
+// ini_set('display_errors', 1;
+
 // validate CPR
 $iCPR = $_POST['txtCpr'] ?? '';
 if( empty($iCPR) ){ fnvSendResponse(0, __LINE__,'CPR field cant be empty');  }
@@ -9,7 +10,7 @@ if( !ctype_digit($iCPR)  ){ fnvSendResponse(0, __LINE__,'CPR can only contain di
 // validate password
 $password = $_POST['password'] ?? '';
 if( empty($password) ){ fnvSendResponse(0, __LINE__,'Password field cant be empty');  }
-if( strlen($password) < 4 ){ fnvSendResponse(0, __LINE__,'Password has to be at least 4 characters'); }
+if( strlen($password) < 2 ){ fnvSendResponse(0, __LINE__,'Password has to be at least 4 characters'); }
 if( strlen($password) > 50 ){ fnvSendResponse(0, __LINE__,'Password cant be longer than 50 characters'); }
 
 // validate confirm password
