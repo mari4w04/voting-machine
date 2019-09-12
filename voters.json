@@ -58,7 +58,11 @@
             "firstName": "Stephanie",
             "lastName": "Smith",
             "password": "$2y$10$iC174gRbLUeZiWvrnl67.uYi4FpYgFzN80jDkAGhQkf1uBE5hQGdq",
-            "hasVoted": false
+            "hasVoted": true,
+            "vote": {
+                "voteId": "5d7a1e41ce20d",
+                "candidateName": "Joe Biden"
+            }
         }
     }
 }
