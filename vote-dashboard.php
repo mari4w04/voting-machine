@@ -104,8 +104,8 @@ foreach($aCandidates as $sCandidate){
     <?php
         foreach($aCandidates as $sCandidate=>$sName){
             $parts = explode(" ", $sName);
-            $lastname = array_pop($parts);
-            $firstname = implode(" ", $parts);
+            $lastname = strtolower(array_pop($parts));
+            $firstname = strtolower(implode(" ", $parts));
 
             $iVotes = $jCandidatesStatistics->$sName->votes;
             echo "<div class='candidate'>
