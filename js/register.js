@@ -27,6 +27,14 @@ $('#frmRegister').submit(function(){
 
         if(jData.status == 0){
             console.log("something went wrong")
+            swal({
+                title: "Oops!",
+                text: jData.message,
+                type: "warning",
+                button: "Back to signup",
+            }).then(function() {
+                window.location = "signup";
+            });
             return
         }
     }).
