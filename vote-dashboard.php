@@ -74,10 +74,9 @@ foreach($aCandidates as $sCandidate){
 </head>
 <body>
   <nav>
-      <a href="login"><img class="logo" src="images/logo.svg"></a>
-      
+      <h6>Hi, <?= $jInnerData->$sUserId->firstName, ' ', $jInnerData->$sUserId->lastName?></h6>
+      <div class="line-separator"></div>
       <a href="apis/logout.php">Log out</a>
-      <h6>Hi <?= $jInnerData->$sUserId->firstName ?></h6>
   </nav>
 
 <div class="content">
