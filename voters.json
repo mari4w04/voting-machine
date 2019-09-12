@@ -110,9 +110,15 @@
             "password": "$2y$10$iC174gRbLUeZiWvrnl67.uYi4FpYgFzN80jDkAGhQkf1uBE5hQGdq",
             "hasVoted": true,
             "vote": {
-                "voteId": "5d79184a4ddf9",
-                "candidateName": "Tulsi Gabbard"
+                "voteId": "5d7a3fd92f23e",
+                "candidateName": "Kirsten Gillibrand"
             }
+        },
+        "0987654312": {
+            "firstName": "qqqqq",
+            "lastName": "qqqqq",
+            "password": "$2y$10$jFLp4LAUipauyflH4Xyww.\/oljlkeqa2N9jaMi1slfwPV6hyzb4v2",
+            "hasVoted": false
         }
     }
 }
